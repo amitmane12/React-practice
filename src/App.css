@@ -131,3 +131,10 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+/* button { */
+/* transition: transform 0.1s ease; */
+/* } */
+
+button:active {
+  transform: scale(0.95);
+}

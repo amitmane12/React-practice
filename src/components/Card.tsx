@@ -1,6 +1,6 @@
 import { Bookmark } from "lucide-react";
 import "../App.css";
-import type { cartPropType } from "../types/ctype";
+import type { cartPropType } from "../types/cartPropType";
 
 const Card = ({
   companyName,
