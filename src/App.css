@@ -74,6 +74,7 @@ body {
 
 .save-btn:hover {
   transform: scale(1.01);
+  border: 1px solid rgb(65, 62, 62);
 }
 .save-icon {
   height: 18px;

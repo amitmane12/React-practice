@@ -9,7 +9,7 @@ const Card = ({
   location,
   icon,
 }: cartPropType) => {
-  console.log(companyName);
+  // console.log(companyName);
   return (
     <div className="parent">
       <div className="top">
