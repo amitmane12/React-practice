@@ -1,0 +1,101 @@
+body {
+  background-color: #212121;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.parent {
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  color: #000;
+  margin: 10px 50px;
+  border-radius: 20px;
+  border: 1px solid #645959;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+.top1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top1 img {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.top1 button {
+  display: flex;
+  gap: 5px;
+  height: 30px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+  font-size: small;
+  color: #635d5d;
+  border: 0.8px solid #dadada;
+}
+
+.top2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.companyTag {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.companyTag h3 {
+  font-weight: 300;
+}
+.companyTag span {
+  font-weight: 100;
+  font-size: small;
+  color: #645959;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  color: #635d5d;
+  margin-top: 5px;
+}
+.tags span {
+  border: 1px solid #635d5d;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #dadada;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.bleft p {
+  color: #635d5d;
+  font-weight: 100;
+}
+
+.bright button {
+  padding: 4px 8px;
+  background-color: #212121;
+  color: #fff;
+  border-radius: 5px;
+}
