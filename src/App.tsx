@@ -1,17 +1,8 @@
 import "./App.css";
-import Card from "./components/Card";
-import users from "./components/data";
+import CardIndex from "./projects/project1/CardIndex";
 
 function App() {
-  return (
-    <div className="container">
-      {users.map((item, idx) => (
-        <div key={idx}>
-          <Card {...item} />
-        </div>
-      ))}
-    </div>
-  );
+  return <CardIndex />;
 }
 
 export default App;

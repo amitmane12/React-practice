@@ -2,6 +2,9 @@ export type cartPropType = {
   companyName: string;
   position: string;
   rate: string;
-  location: string;
+  location: {
+    city: string;
+    country: string;
+  };
   icon?: string;
 };

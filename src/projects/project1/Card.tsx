@@ -1,6 +1,6 @@
 import { Bookmark } from "lucide-react";
-import "../App.css";
-import type { cartPropType } from "../types/cartPropType";
+import type { cartPropType } from "./types/cartPropType";
+import styles from "./Card.module.css";
 
 const Card = ({
   companyName,
@@ -11,32 +11,34 @@ const Card = ({
 }: cartPropType) => {
   // console.log(companyName);
   return (
-    <div className="parent">
-      <div className="top">
-        <div className="top1">
+    <div className={styles.parent}>
+      <div className={styles.top}>
+        <div className={styles.top1}>
           <img src={icon} alt="icon" />
-          <button className="save-btn">
-            Save <Bookmark className="save-icon" />{" "}
+          <button className={styles.saveBtn}>
+            Save <Bookmark className={styles.saveIcon} />{" "}
           </button>
         </div>
-        <div className="top2">
-          <div className="companyTag">
+        <div className={styles.top2}>
+          <div className={styles.companyTag}>
             <h3>{companyName}</h3>
             <span>5 days ago</span>
           </div>
           <h2>{position}</h2>
-          <div className="tags">
+          <div className={styles.tags}>
             <span>Part time</span>
             <span>Senior Level</span>
           </div>
         </div>
       </div>
-      <div className="bottom">
-        <div className="bleft">
+      <div className={styles.bottom}>
+        <div className={styles.bleft}>
           <h3>${rate}k</h3>
-          <p>{location}</p>
+          <p>
+            {location.city}, {location.country}
+          </p>
         </div>
-        <div className="bright">
+        <div className={styles.bright}>
           <button>Apply now</button>
         </div>
       </div>
