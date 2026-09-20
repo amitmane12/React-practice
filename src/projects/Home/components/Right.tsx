@@ -1,16 +1,11 @@
 import RightCardContent from "./RightCardContent";
+import type { itemType } from "./types";
 
-const Right = () => {
+const Right = ({ id, img, butnTag }: itemType) => {
   return (
-    <div>
-      <div className="relative h-full overflow-hidden rounded-2xl">
-        <img
-          className="h-full w-full  rounded-2xl"
-          src="https://img.magnific.com/premium-photo/anime-girl-business-suit-holding-phone-office_591846-5568.jpg?semt=ais_hybrid&w=740&q=80"
-          alt="image"
-        />
-        <RightCardContent />
-      </div>
+    <div className="relative h-full w-full max-w-80 shrink-0 overflow-hidden rounded-4xl ">
+      <img className=" h-full w-full object-cover " src={img} alt="image" />
+      <RightCardContent butnTag={butnTag} id={id} />
     </div>
   );
 };

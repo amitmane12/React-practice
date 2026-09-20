@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
+// import type { cardType } from "../../project1/types/card.types";
 
-const RightCardContent = () => {
+const RightCardContent = ({ butnTag, id }: { butnTag: string; id: number }) => {
   return (
     <div className="absolute top-0 left-0 flex flex-col justify-between  h-full p-6">
       <div>
@@ -16,7 +17,7 @@ const RightCardContent = () => {
           items-center
            justify-center"
         >
-          1
+          {id}
         </h1>
       </div>
       <div>
@@ -24,9 +25,9 @@ const RightCardContent = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta odio
           aliquam quam a porro consequatur animi quidem enim corrupti nihil!
         </p>
-        <div className="flex justify-between px-6 items-center ">
-          <button className="font-bold text-2xl  px-10 py-2 rounded-full bg-black text-blue-600">
-            Satisfied
+        <div className="flex justify-around lg:px-10 lg:py-2  lg:overflow-hidden">
+          <button className="font-bold text-2xl  px-10 py-2 rounded-full bg-black text-blue-600 ">
+            {butnTag}
           </button>
           <button className="  px-4 py-2 bg-black text-blue-600 rounded-full">
             <ArrowRight size={36} />
